@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/group_humidity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/simple_bordered"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/group_wind"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="8dp"
+        android:padding="8dp"
+        android:elevation="2dp"
+        tools:ignore="RtlHardcoded">
+
+        <ImageView
+            android:id="@+id/group_humidity_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_humidity"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="8dp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/group_humidity_rh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextPrimary"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/group_humidity_icon"
+            app:layout_constraintBottom_toTopOf="@id/group_humidity_cloud"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            tools:text="رطوبت نسبی: 20" />
+
+        <TextView
+            android:id="@+id/group_humidity_cloud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextPrimary"
+            app:layout_constraintTop_toBottomOf="@id/group_humidity_rh"
+            app:layout_constraintRight_toLeftOf="@id/group_humidity_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintHorizontal_bias="1"
+            tools:text="پوشش ابر: 20"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/group_wind"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/simple_bordered"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/group_humidity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="8dp"
+        android:padding="8dp"
+        android:elevation="2dp"
+        tools:ignore="RtlHardcoded">
+
+        <ImageView
+            android:id="@+id/group_wind_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_wind"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="8dp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/group_wind_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextPrimary"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/group_wind_icon"
+            app:layout_constraintBottom_toTopOf="@id/group_wind_direction"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            tools:text="سرعت باد: 20" />
+
+        <TextView
+            android:id="@+id/group_wind_direction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextPrimary"
+            app:layout_constraintTop_toBottomOf="@id/group_wind_speed"
+            app:layout_constraintRight_toLeftOf="@id/group_wind_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            tools:text="جهت باد: 20"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/simple_bordered"
+        app:layout_constraintTop_toBottomOf="@id/group_wind"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="8dp"
+        android:layoutDirection="rtl"
+        android:padding="8dp"
+        android:elevation="2dp">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_sunrise"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/group_sun_guideline"
+            android:layout_margin="8dp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/group_sun_rise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            tools:text="طلوع خورشید: 20"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/group_sun_guideline"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/group_sun_set"
+            app:layout_constraintHorizontal_bias="1"/>
+
+        <TextView
+            android:id="@+id/group_sun_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            tools:text="غروب خورشید: 20"
+            app:layout_constraintTop_toBottomOf="@id/group_sun_rise"
+            app:layout_constraintBottom_toTopOf="@id/group_sun_uv"
+            app:layout_constraintRight_toLeftOf="@id/group_sun_guideline"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintHorizontal_bias="1"/>
+
+        <TextView
+            android:id="@+id/group_sun_uv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            tools:text="ماورابنفش: 20"
+            app:layout_constraintTop_toBottomOf="@id/group_sun_set"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/group_sun_guideline"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintHorizontal_bias="1"/>
+
+        <android.support.constraint.Guideline
+            android:id="@+id/group_sun_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.4"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

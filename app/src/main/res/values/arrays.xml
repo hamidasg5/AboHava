@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="prefs_units_entries">
+        <item>استاندارد (سانتی گراد و کیلومتربرساعت)</item>
+        <item>علمی (کلوین و متربرثانیه)</item>
+        <item>انگلیسی (فارنهایت و مایل برساعت)</item>
+    </string-array>
+    <string-array name="prefs_units_entry_values">
+        <item>M</item>
+        <item>S</item>
+        <item>I</item>
+    </string-array>
+</resources>

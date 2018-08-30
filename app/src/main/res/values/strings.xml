@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">آب و هوا</string>
+
+    <!-- settings -->
+    <string name="app_settings">تنظیمات</string>
+    <string name="prefs_auto_update_weather">PREFS_AUTO_UPDATE_WEATHER</string>
+    <string name="prefs_units">PREFS_UNITS</string>
+    <string name="prefs_page_index">PREFS_PAGE_INDEX</string>
+    <string name="title_auto_update_weather">بروزرسانی خودکار آب و هوا</string>
+    <string name="title_prefs_units">واحد دما و سرعت</string>
+
+    <!--search activity -->
+    <string name="search">جستجو</string>
+    <string name="hint_search_view">نام شهر را واد کنید…</string>
+
+    <!-- city activity -->
+    <string name="city_list">مدیریت شهرها</string>
+    <string name="city_delete_message">شهر %s حذف خواهد شد. آیا مطمئنید؟</string>
+    <string name="warning">هشدار</string>
+    <string name="cancel">لغو</string>
+    <string name="ok">تایید</string>
+    <string name="add_from_list">اضافه از لیست</string>
+    <string name="add_from_map">اضافه از نقشه</string>
+
+    <!-- map activity -->
+    <string name="map_activity_title">نقشه</string>
+    <string name="place_marker_on_center">نقشه را حرکت دهید تا نشان را روی شهر دلخواه قرار گیرد</string>
+    <string name="location_permission_message">برای تکمیل عملکرد برنامه نیاز به دسترسی به مکان می باشد</string>
+    <string name="location_access_denied">اجازه داده نشد. دسترسی به مکان امکان پذیر نیست!</string>
+
+    <!-- messages to user -->
+    <string name="update_successful">آپدیت شد</string>
+    <string name="loading_failure">خطا در بارگذاری، لطفا دوباره تلاش کنید.</string>
+    <string name="city_is_already_in_list">شهر قبلا اضافه شده است</string>
+    <string name="list_cannot_has_zero_items">لیست شهرها نمی تواند خالی باشد</string>
+
+    <!-- weather activities -->
+    <string name="forecast_details">جزئیات پیش بینی هوا</string>
+    <string name="forecast_days_label">آب و هوا در سه روز آینده</string>
+    <string name="last_update_date_label">تاریخ آخرین بروزرسانی:</string>
+    <string name="history_weather_title">تاریخچه آب و هوا</string>
+    <string name="history_temp_graph_label">دما در 24 ساعت گذشته</string>
+    <string name="history_weather_list_label">جزئیات هوا در 24 ساعت گذشته</string>
+    <string name="forecast_weather_title">پیش بینی آب و هوا</string>
+    <string name="forecast_temp_graph_label">دما در 24 ساعت آینده</string>
+    <string name="forecast_weather_list_label">جزئیات هوا در 48 ساعت آینده</string>
+    <string name="wind_speed">سرعت باد:</string>
+    <string name="wind_direction">جهت باد:</string>
+</resources>

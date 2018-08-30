@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PlotterView">
+        <attr name="drawXAxis" format="boolean"/>
+        <attr name="drawYAxis" format="boolean"/>
+        <attr name="dataType" format="integer"/>
+        <attr name="drawingColor" format="color"/>
+    </declare-styleable>
+</resources>

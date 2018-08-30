@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/map_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:layoutDirection="rtl"
+        android:layout_alignParentTop="true"
+        app:titleTextColor="@color/colorTextPrimary"
+        android:elevation="4dp"
+        app:title="@string/map_activity_title"/>
+
+    <TextView
+        android:id="@+id/map_marker_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/place_marker_on_center"
+        android:layout_below="@id/map_toolbar"
+        android:padding="8dp"
+        android:gravity="center"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="12sp"
+        android:background="@color/colorAccent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/map_marker_message">
+
+        <fragment
+            android:id="@+id/map_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.google.android.gms.maps.SupportMapFragment"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_location"
+            android:background="@color/colorTransparent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

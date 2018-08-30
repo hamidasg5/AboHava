@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:key="@string/prefs_auto_update_weather"
+        android:title="@string/title_auto_update_weather"
+        android:defaultValue="true"/>
+    <ListPreference
+        android:key="@string/prefs_units"
+        android:title="@string/title_prefs_units"
+        android:dialogTitle="@string/title_prefs_units"
+        android:entries="@array/prefs_units_entries"
+        android:entryValues="@array/prefs_units_entry_values"
+        android:defaultValue="M"/>
+</PreferenceScreen>
