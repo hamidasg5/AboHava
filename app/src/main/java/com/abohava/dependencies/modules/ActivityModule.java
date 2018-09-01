@@ -57,37 +57,31 @@ public class ActivityModule {
     }
 
     @Provides
-    @PerActivity
     public FragmentManager provideFragmentManager() {
         return mActivity.getSupportFragmentManager();
     }
 
     @Provides
-    @PerActivity
     public LinearLayoutManager provideLinearLayoutManager(@ActivityContext Context context) {
         return new LinearLayoutManager(context);
     }
 
     @Provides
-    @PerActivity
     public CityAdapter provideCityAdapter(@ActivityContext Context context, CompositeDisposable compositeDisposable) {
         return new CityAdapter(context, compositeDisposable);
     }
 
     @Provides
-    @PerActivity
     public HistoryAdapter provideHistoryWeatherAdapter(@ActivityContext Context context, CompositeDisposable compositeDisposable) {
         return new HistoryAdapter(context, compositeDisposable);
     }
 
     @Provides
-    @PerActivity
     public ForecastAdapter provideForecastAdapter(@ActivityContext Context context, CompositeDisposable compositeDisposable) {
         return new ForecastAdapter(context, compositeDisposable);
     }
 
     @Provides
-    @PerActivity
     public SearchAdapter provideSearchAdapter(@ActivityContext Context context, CompositeDisposable compositeDisposable) {
         return new SearchAdapter(context, compositeDisposable);
     }
